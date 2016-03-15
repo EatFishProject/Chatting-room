@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img {
+            border: none;
+            display: block;
+        }
+
+        ul, li {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+
+            /*font-family: "microsoft yahei"*/
+        }
+
+        a, img {
+            -webkit-touch-callout: none; /*禁止长按链接与图片弹出菜单*/
+        }
+
+        p, h1, h2, h3, h4, h5, h6 {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body,
+        div,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            width: 100%;
+            *cursor: default;
+            /*font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;*/
+        }
+
+        @media only screen and (max-device-width: 480px) {
+            html {
+                font-size: 19px;
+            }
+        }
+
+        @media only screen and (min-device-width: 481px) {
+            html {
+                font-size: 19px;
+            }
+
+        }
+
+        /*6*/
+        @media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+            html {
+                font-size: 20px;
+            }
+
+        }
+
+        /*6+*/
+        @media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+            html {
+                font-size: 21px;
+            }
+
+
+        }
+
+        /*魅族*/
+        @media only screen and (min-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2.5) {
+
+            html {
+                /*font-size: 20px;*/
+            }
+
+        }
+
+        /*mate7*/
+        @media only screen and (min-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 3) {
+
+            html {
+                /*ont-size: 20px;*/
+            }
+
+        }
+
+        /*4 4s*/
+        @media only screen and (device-height: 480px) and (-webkit-device-pixel-ratio: 2) {
+            html {
+                font-size: 16px;
+            }
+
+        }
+
+        /* 兼容iphone5 */
+        @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+            html {
+                font-size: 18px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<input id="num" type="text" value="10"/>
+<a id="plus" onclick="plus()">+</a>
+<a id="minus" onclick="minus()">-</a>
+<script>
+    var num=document.getElementById('num');
+    function plus(){
+        num.value=Number(num.value)+1;
+    }
+    function minus(){
+        num.value=Number(num.value)-1;
+    }
+</script>
+</body>
+</html>
